@@ -1,0 +1,11 @@
+.login-form {
+  widows: 100%;
+  max-width: 330px;
+  padding: 15px;
+  margin: auto;
+}
+
+.btn-lg,
+.btn-group-lg > .btn {
+  padding: 10px 90px;
+}

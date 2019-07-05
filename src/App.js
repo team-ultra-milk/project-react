@@ -3,6 +3,7 @@ import "semantic-ui-css/semantic.min.css";
 import { Menu, Dropdown, Card, Container, Divider } from "semantic-ui-react";
 import "./App.css";
 import Reservation from "./reservation";
+import Login from "./components/login";
 
 const menuStyle = {
   padding: "0 120px"
@@ -53,9 +54,7 @@ export default class MenuExampleInverted extends Component {
         <Menu
           inverted
           style={{
-            height: "80px",
-            display: "flex",
-            justifyContent: "space-around"
+            height: "50px"
           }}
         >
           <Dropdown item text="RESERVATIONS" style={menuStyle}>
@@ -115,6 +114,9 @@ export default class MenuExampleInverted extends Component {
             <Divider />
             <Card.Group items={items}  style={{display: "flex", alignItems: "space-between"}}/>
           </Container>
+        </div>
+        <div>
+          <Login/>
         </div>
       </div>
     );
