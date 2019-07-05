@@ -7,4 +7,23 @@ Grid.Column{
   background-color: transparent;
 }
 
+.ui.inverted.menu > a.item:hover {
+  background: #ffd238;
+}
+
+.ui.inverted.menu {
+  margin: 0;
+}
+
+.ui.menu {
+  border-radius: 0;
+}
+
+.ui.item.dropdown:hover {
+  background: #ffd238;
+}
+
+.ui.inverted.menu .item:hover {
+  background: #ffd238;
+}
 
