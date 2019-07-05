@@ -1,7 +1,28 @@
 import React, { Component } from "react";
 import "semantic-ui-css/semantic.min.css";
 // import { Link } from "react-router-dom";
-import { Form, Grid } from "semantic-ui-react";
+import { Form, Grid, Container, Divider, Card } from "semantic-ui-react";
+
+const items = [
+  {
+    header: "Project Report - April",
+    description:
+      "Leverage agile frameworks to provide a robust synopsis for high level overviews.",
+    meta: "ROI: 30%"
+  },
+  {
+    header: "Project Report - May",
+    description:
+      "Bring to the table win-win survival strategies to ensure proactive domination.",
+    meta: "ROI: 34%"
+  },
+  {
+    header: "Project Report - June",
+    description:
+      "Capitalise on low hanging fruit to identify a ballpark value added activity to beta test.",
+    meta: "ROI: 27%"
+  }
+];
 
 class Reservation extends Component {
   constructor(props) {
@@ -128,6 +149,24 @@ class Reservation extends Component {
             </Grid.Column>
           </Grid.Row>
         </Grid>
+        <div
+            style={{
+              paddingTop: "20px",
+              paddingLeft: "20px",
+              height: "300px",
+              backgroundColor: "#ffd238",
+              display: "flex",
+              justifyContent: "space-between"
+            }}
+          >
+            <Container textAlign="justified">
+              <Divider />
+              <Card.Group
+                items={items}
+                style={{ display: "flex", alignItems: "space-between" }}
+              />
+            </Container>
+          </div>
       </div>
     );
   }

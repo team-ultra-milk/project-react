@@ -9,6 +9,7 @@ Grid.Column{
 
 .ui.inverted.menu > a.item:hover {
   background: #ffd238;
+  height: 45px;
 }
 
 .ui.inverted.menu {
